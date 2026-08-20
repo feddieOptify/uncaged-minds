@@ -30,14 +30,14 @@
 
 :root {
   color-scheme: dark;
-  --background: #08060a;
+  --background: #140f0b;
   --foreground: #ece7dd;
-  --card: #100b09;
+  --card: #1a130d;
   --card-foreground: #ece7dd;
-  --muted: #1a1410;
+  --muted: #241a12;
   --muted-foreground: #a49b8c;
-  --border: #2a2118;
-  --input: #1c1611;
+  --border: #34271b;
+  --input: #241a12;
   --ring: #d4a53a;
   --radius: 0.625rem;
 
