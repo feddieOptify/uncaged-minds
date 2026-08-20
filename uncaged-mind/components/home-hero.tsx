@@ -6,7 +6,7 @@ export function HomeHero() {
         <img
           src="/images/hero-studio.jpeg"
           alt="Uncaged Mind Podcast — Where Curiosity Leads. Host seated at a dark studio desk with a microphone, a branded mug, and a brain-logo card."
-          className="absolute inset-0 h-full w-full object-cover object-[70%_top] sm:object-top"
+          className="absolute inset-0 h-full w-full object-cover object-[70%_20%] sm:object-[center_20%]"
           fetchPriority="high"
         />
 
