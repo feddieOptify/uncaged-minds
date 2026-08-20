@@ -54,6 +54,17 @@
     @apply bg-background;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background-color: var(--background);
+    background-image: linear-gradient(
+        to bottom,
+        color-mix(in srgb, var(--background) 55%, transparent),
+        color-mix(in srgb, var(--background) 75%, transparent)
+      ),
+      url('/images/wood-texture.png');
+    background-repeat: no-repeat, repeat;
+    background-size: cover, 720px auto;
+    background-position: center top, center top;
+    background-attachment: fixed, fixed;
   }
 }
