@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-muted: var(--gold-muted);
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  color-scheme: dark;
+  --background: #08060a;
+  --foreground: #ece7dd;
+  --card: #100b09;
+  --card-foreground: #ece7dd;
+  --muted: #1a1410;
+  --muted-foreground: #a49b8c;
+  --border: #2a2118;
+  --input: #1c1611;
+  --ring: #d4a53a;
+  --radius: 0.625rem;
+
+  --gold: #d4a53a;
+  --gold-light: #e8c76a;
+  --gold-muted: #b8863a;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply bg-background;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
